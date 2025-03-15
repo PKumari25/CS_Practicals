@@ -3,39 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maths Practical</title>
-    <style>
-        body {
-            text-align: center;
-            font-family: Arial, sans-serif;
-            margin: 50px;
-        }
-        .pdf-container {
-            margin-top: 20px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 18px;
-            background-color: #28a745;
-            color: white;
-            border: none;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .btn:hover {
-            background-color: #218838;
-        }
-    </style>
+    <title>Maths Practical File</title>
 </head>
 <body>
-    <h1>Maths Practical File</h1>
-    <div class="pdf-container">
-        <iframe src="D:\CS_Practicals\files\R1 Prac (1).pdf" width="80%" height="500px"></iframe>
+    <h2 style="text-align: center;">Maths Practical File</h2>
+    
+    <!-- Display PDF -->
+    <embed src="files/R1%20Prac%20(1).pdf" type="application/pdf" width="80%" height="500px" />
+
+    <!-- Download Button -->
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="files/R1%20Prac%20(1).pdf" download="Maths_Practical.pdf">
+            <button style="background-color: green; color: white; padding: 10px; border: none; cursor: pointer;">
+                Download Maths PDF
+            </button>
+        </a>
     </div>
-    <a href="D:\CS_Practicals\files\R1 Prac (1).pdf" download class="btn">Download Maths PDF</a>
-    <br><br>
-    <a href="index.html" class="btn" style="background-color: #007bff;">Go Back</a>
 </body>
 </html>
