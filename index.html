@@ -3,32 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Download Portal</title>
+    <title>CS Practicals</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             text-align: center;
+            font-family: Arial, sans-serif;
             margin: 50px;
         }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
         .btn {
-            display: block;
-            width: 200px;
-            margin: 10px auto;
-            padding: 10px;
-            background-color: #3498db;
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007bff;
             color: white;
+            border: none;
+            cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
         }
         .btn:hover {
-            background-color: #2980b9;
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
-    <h2>Download Code Files</h2>
-    <a class="btn" href="files/dbms.pdf" download>DBMS</a>
-    <a class="btn" href="files/maths.pdf" download>Maths</a>
-    <a class="btn" href="files/data_structures.py" download>Data Structures (Python)</a>
+    <h1>Download Practical Files</h1>
+    <div class="button-container">
+        <a href="maths.html" class="btn">Maths</a>
+        <a href="dbms.html" class="btn">DBMS</a>
+        <a href="data_structures.html" class="btn">Data Structures</a>
+    </div>
 </body>
 </html>
