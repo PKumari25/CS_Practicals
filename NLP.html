@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Download Files</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .file-section {
+            display: none;
+            margin-top: 20px;
+        }
+        .file-section li {
+            margin-bottom: 10px;
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Download Center</h1>
+
+    <button onclick="toggleSection('docs')">Show Docs & PDFs</button>
+    <button onclick="toggleSection('codes')">Show Code Files</button>
+
+    <div id="docs" class="file-section">
+        <h2>Docs & PDFs</h2>
+        <ul>
+            <li><a href="files\NLP_file\MSC_AI_NLP_UNIT_I_NLP_BASICS_PART_1.pdf" download>MSC_AI_NLP_UNIT_I_NLP_BASICS_PART_1 pdf</a></li>
+            <li><a href="files\NLP_file\MSC_AI_UNIT_I_CORPORA_FOR_NLP_PART_2.pdf" download>MSC_AI_UNIT_I_CORPORA_FOR_NLP_PART_2 pdf</a></li>
+            <li><a href="files\NLP_file\Natural_Language_Processing_with_Python.pdf" download>Natural_Language_Processing_with_Python pdf</a></li>
+            <li><a href="files\NLP_file\NLP_UNIT_II_FSM_FST.docx" download>NLP_UNIT_II_FSM_FST docx</a></li>
+            <li><a href="files\NLP_file\NLP_UNIT_II_Notes on Morphology and Part of Speech Tagging_examples.docx" download>NLP_UNIT_II_Notes on Morphology and Part of Speech Tagging_examples docx</a></li>
+            <li><a href="vfiles\NLP_file\NLP_UNIT_III_SEMANTIC_ANALYSIS.pdf" download>NLP_UNIT_III_SEMANTIC_ANALYSIS pdf</a></li>
+            <li><a href="files\NLP_file\NLTK_FRAMEOWRK_CONCEPTS.docx" download>NLTK_FRAMEOWRK_CONCEPTS docx</a></li>
+        </ul>
+    </div>
+
+    <div id="codes" class="file-section">
+        <h2>Code Files (Google Colab & Python)</h2>
+        <ul>
+            <li><a href="files\NLP_file\NLP_LAB_1_CORPORA.ipynb" download>NLP_LAB_1_CORPORA</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_2_FUNDAMENTAL_CONCEPTS_NLP.ipynb" download>NLP_LAB_2_FUNDAMENTAL_CONCEPTS_NLP</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_3_Tokenization_and_Grammer.ipynb" download>NLP_LAB_3_Tokenization_and_Grammer</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_4_LANGUAGE_COMPUTING.ipynb" download>NLP_LAB_4_LANGUAGE_COMPUTING</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_5_LANGUAGE_COMPUTING.ipynb" download>NLP_LAB_5_LANGUAGE_COMPUTING</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_6_1_Text_Processing_BASIC.ipynb" download>NLP_LAB_6_1_Text_Processing_BASIC</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_6_2_Basic Text Processing and Analysis.ipynb" download>NLP_LAB_6_2_Basic Text Processing and Analysis</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_6_3_text_processing_normalization.ipynb" download>NLP_LAB_6_3_text_processing_normalization</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_7_1_PSG_CFG_GRAMMAR.ipynb" download>NLP_file\NLP_LAB_7_1_PSG_CFG_GRAMMAR</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_7_2_DEPENDENCY_GRAMMAR.ipynb" download>NLP_LAB_7_2_DEPENDENCY_GRAMMAR</a></li>
+            <li><a href="files\NLP_file\NLP_LAB_7_3_CONTEXT_FREE_GRAMMERS.ipynb" download>NLP_LAB_7_3_CONTEXT_FREE_GRAMMERS</a></li>
+
+
+        </ul>
+    </div>
+
+    <script>
+        function toggleSection(sectionId) {
+            // Hide both sections first
+            document.getElementById('docs').style.display = 'none';
+            document.getElementById('codes').style.display = 'none';
+            
+            // Show the selected one
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
